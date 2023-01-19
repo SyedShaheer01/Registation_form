@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), #3551b5), url('./photo-1432405972618-c60b0225b8f9.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container h1{
+    color: #fff;
+    margin-left:170px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    text-decoration: underline gainsboro;
+    
+}
+form{
+    width: 90%;
+    max-width: 600px;
+    
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.5s;
+}
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+button:hover{
+    transition: 0.5s;
+    background: black;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+.row .input-group{
+    flex-basis: 48%;
+}
